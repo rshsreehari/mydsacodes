@@ -1,0 +1,16 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Build output
+out/
+*.class
+
+# macOS system file
+.DS_Store
+
+# Logs
+*.log
