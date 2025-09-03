@@ -20,7 +20,7 @@ public class i_LeftRotatebyK {
     static void leftRotate(int arr[], int d, int n) {
         if (d == 0) return;
         /*
-        this is done coz rotate more than d gives same result as
+        this is done coz rotate more than n gives same result as
         rotating d%n
         i.e rotating 9 times and 2 times is the same for n=7
          */
