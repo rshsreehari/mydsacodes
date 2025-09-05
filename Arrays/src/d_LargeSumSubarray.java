@@ -37,4 +37,28 @@ public class d_LargeSumSubarray {
         // Print the result
         System.out.println("Largest sum of contiguous subarray: " + maxSum);
     }
+
+    /*
+    very imp: kadane's is also written in diff way.
+    approach is simple!
+
+    at every index in array check if we can start new subarray or
+    continue with previous stack subarray to get the maximum sub array.
+
+    This can be seen as below:
+
+    public static int largestSum(int[] arr, int n) {
+        int cursubsum = arr[0];
+        int maxsubsum = arr[0];
+
+        for (int i = 1; i < n; i++) {
+            cursubsum = Math.max(cursubsum+arr[i],arr[i]);
+            maxsubsum = Math.max(maxsubsum,cursubsum);
+        }
+        return maxsubsum;
+        // Return the maximum sum found
+        return maxsubsum;
+    }
+
+     */
 }
