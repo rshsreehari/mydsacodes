@@ -1,5 +1,9 @@
 public class c_EquilibriumIndex {
     // Function to find equilibrium index
+    /*
+    if left sum and sum to right side of index are equal then
+    its an equilibrium point
+     */
     public static int eqIndex(int[] arr, int n) {
         int sum = 0;
         int leftSum = 0;
